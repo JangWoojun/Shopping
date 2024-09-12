@@ -50,6 +50,7 @@ dependencies {
     implementation(project(":domain"))
 
     implementation("com.google.dagger:hilt-android:2.52")
+    implementation(libs.androidx.material3.android)
     kapt("com.google.dagger:hilt-android-compiler:2.52")
 
     implementation(libs.androidx.core.ktx)
@@ -67,4 +68,7 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.hilt.navigation.compose)
 }
